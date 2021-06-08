@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "day": "typicode",
+      "reminder ": true
+    }
+  ]
+}

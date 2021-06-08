@@ -1,0 +1,46 @@
+* {
+  font-family: inherit;
+  font-size: 18px;
+}
+.container {
+  overflow: auto;
+  border: 0.1px solid rgb(39, 47, 53);
+}
+.form-control {
+  margin: 20px 0;
+  border: 0px !important;
+  align-items: center;
+}
+
+.form-control input {
+  width: 50%;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  float: right;
+}
+.add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 500px;
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-add {
+  display: block;
+  width: 100%;
+}
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
