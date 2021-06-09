@@ -3,10 +3,15 @@
   margin: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  border-left: 5px solid rgb(8, 46, 51);
 }
-.task-item i {
+.task-item > h5 > i {
   display: flex;
   align-items: center;
   float: right;
   color: red;
 }
+.task-item a {
+  color: rgb(98, 189, 201);
+}
+

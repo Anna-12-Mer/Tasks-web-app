@@ -10,6 +10,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateTaskComponent } from './components/update-task/update-task.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     AddTaskComponent,
     TasksComponent,
     HeaderComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    UpdateTaskComponent
   ],
   imports: [
     BrowserModule,

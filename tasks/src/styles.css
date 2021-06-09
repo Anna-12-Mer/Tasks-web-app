@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.form-control {
+  margin: 20px 0;
+  border: 0px !important;
+  align-items: center;
+}
+
+.form-control input {
+  width: 50%;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  float: right;
+}
+.add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}

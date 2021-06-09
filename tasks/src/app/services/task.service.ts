@@ -32,4 +32,10 @@ onDelete(task: Task){
   const url =`${this._url}/${task.id}`;
   return this.http.delete<Task>(url);
 }
+
+// ** Update A Task*/
+updateTask(task: Task){
+  const url =`${this._url}/${task.id}`;
+  return this.http.put(url,task,httpOptions);
+}
 }

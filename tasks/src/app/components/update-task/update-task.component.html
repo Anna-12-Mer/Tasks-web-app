@@ -1,0 +1,17 @@
+<div class="container ">
+  <form class="add-form" (ngSumit)="onUpdate()">
+    <div class="form-control">
+      <label for="name">Name:</label>
+      <input type="text" name="name" [ngModel]="task_update.name" (ngModelChange)="savename($event)"id="name" />
+    </div>
+    <div class="form-control">
+      <label for="day">Day :</label>
+      <input type="text" name="day" [ngModel]="task_update.day" (ngModelChange)="saveday($event)" id="day" />
+    </div>
+    <div class="form-control form-control-check">
+      <label for="reminder">Reminder:</label>
+      <input type="checkbox" name="reminder" [ngModel]="task_update.reminder" (ngModelChange)="saveRemider($event)"id="Reminder" />
+    </div>
+    <input type="submit" value="Update Task" class="btn" />
+  </form>
+</div>

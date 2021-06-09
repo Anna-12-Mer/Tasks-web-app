@@ -9,6 +9,8 @@ export class TaskItemComponent implements OnInit {
    @Input()
   task!: Task;
   @Output() deleteEmit  = new EventEmitter();
+  showModal: boolean = false;
+  newTask! : Task;
 
   constructor() {
   }
@@ -16,7 +18,12 @@ export class TaskItemComponent implements OnInit {
   ngOnInit(): void {
   }
 onDelete(task: Task){
-  console.log(task.id);
-  this.deleteEmit.emit(task); 
+  this.deleteEmit.emit(task);
+}
+showModel(task : Task){
+  this.showModal = true;
+}
+hiden(){
+  this.showModal = false;
 }
 }

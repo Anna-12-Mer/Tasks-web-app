@@ -1,4 +1,21 @@
 <div class="task-item">
   <h5>{{task.name}} <i (click)="onDelete(task)">X</i></h5>
-  <p>{{task.day}}</p>
+  <p>{{task.day}} </p>
+  <a (click)="showModel(task)" data-toggle="modal" data-target="#modelUpdateTask">Update <i class="far fa-edit"></i></a>
+
+  <!-- Modal content -->
+  <div [style.display]="showModal ? 'block' : 'none'" class="modal fade" id="modelUpdateTask" tabindex="-1"
+    role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Update Task</h4>
+          <button (click)="hiden()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <app-update-task [task_update]="task"></app-update-task>
+      </div>
+    </div>
+  </div>
 </div>
