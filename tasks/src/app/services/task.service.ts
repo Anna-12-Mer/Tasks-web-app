@@ -23,4 +23,9 @@ export class TaskService {
     return this.http.get<Task[]>(this._url);
   }
 
+  //** Add a Task */
+  addTask(task: Task){
+    return this.http.post<Task>(this._url, task); 
+  }
+
 }
