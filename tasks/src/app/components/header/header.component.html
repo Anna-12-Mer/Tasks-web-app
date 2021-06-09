@@ -1,4 +1,4 @@
 <div class="container header">
   <h3>Tasks Reminder</h3>
-  <input type="submit" value="Add" class="btn btn-add">
+  <input type="submit" value={{text}} class="btn btn-add" (click)="toggeleAddTask()" [ngStyle]="{'background': color}">
 </div>
