@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
 import {Task} from '../../models/Task'
 @Component({
   selector: 'app-task-item',
@@ -8,11 +8,15 @@ import {Task} from '../../models/Task'
 export class TaskItemComponent implements OnInit {
    @Input()
   task!: Task;
+  @Output() deleteEmit  = new EventEmitter();
 
   constructor() {
   }
 
   ngOnInit(): void {
   }
-
+onDelete(task: Task){
+  console.log(task.id);
+  this.deleteEmit.emit(task); 
+}
 }

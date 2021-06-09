@@ -13,10 +13,16 @@
       "reminder": true
     },
     {
-      "name": "test",
-      "day": "June 1pm",
+      "name": "Very important",
+      "day": "June 8th 6pm",
       "reminder": true,
       "id": 3
+    },
+    {
+      "name": "test",
+      "day": "June 8th 6pm",
+      "reminder": true,
+      "id": 4
     }
   ]
 }

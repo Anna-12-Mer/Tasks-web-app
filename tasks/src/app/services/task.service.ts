@@ -25,7 +25,11 @@ export class TaskService {
 
   //** Add a Task */
   addTask(task: Task){
-    return this.http.post<Task>(this._url, task); 
+    return this.http.post<Task>(this._url, task);
   }
-
+// ** Delete A Task */
+onDelete(task: Task){
+  const url =`${this._url}/${task.id}`;
+  return this.http.delete<Task>(url);
+}
 }

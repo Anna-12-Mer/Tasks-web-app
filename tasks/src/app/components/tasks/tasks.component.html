@@ -1,4 +1,9 @@
 <div class="container">
   <app-add-task (newTaskEvent)="addTask($event)"></app-add-task>
-  <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+  <app-task-item *ngFor="let task of tasks | paginate: { itemsPerPage: 3, currentPage: page }" [task]="task"
+    (deleteEmit)="deleteATask(task)"></app-task-item>
+  <div class="pagination">
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+
 </div>

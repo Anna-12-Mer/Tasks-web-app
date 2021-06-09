@@ -4,3 +4,9 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+.task-item i {
+  display: flex;
+  align-items: center;
+  float: right;
+  color: red;
+}
